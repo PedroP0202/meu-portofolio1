@@ -277,11 +277,29 @@ section.topo-do-site.flex{
 }
 
 /* Estilo das especialidades */
+.espaco-entre-section{
+    margin-top: 100px;
+    visibility: hidden;
+    padding: 20px 4%;
+}
+section.especialidades2{
+    padding: 20px 4%;
+    margin-top: 0px;
+    
+    visibility: hidden;
+   
+    
+    
+}
+
+
 section.especialidades{
     padding: 80px 4%;
    margin-top: 40px;
    background-image: url(imagens/5m5h.gif);
 }
+
+
 
 section.especialidades .flex{
     align-items: center;
@@ -289,6 +307,8 @@ section.especialidades .flex{
     gap: 60px;
     
 }
+
+
 .especialidades .especialidades-box{
     color: #BFBFBF;
     padding: 30px;
