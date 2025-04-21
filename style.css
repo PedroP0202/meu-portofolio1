@@ -278,7 +278,7 @@ section.topo-do-site.flex{
 
 /* Estilo das especialidades */
 .espaco-entre-section{
-    margin-top: 100px;
+    margin-bottom: 10px;
     visibility: hidden;
     padding: 20px 4%;
 }
