@@ -278,22 +278,16 @@ section.topo-do-site.flex{
 }
 
 /* Estilo das especialidades */
-
 .espaco-entre-section{
     margin-bottom: 10px;
     visibility: hidden;
     padding: 20px 4%;
 }
-
-
 section.especialidades{
     padding: 40px 4%;
-    
    margin-top: 150px;
    background-image: url(imagens/5m5h.gif);
 }
-
-
 
 section.especialidades .flex{
     align-items: center;
@@ -301,8 +295,6 @@ section.especialidades .flex{
     gap: 60px;
     
 }
-
-
 .especialidades .especialidades-box{
     color: #BFBFBF;
     padding: 30px;
@@ -410,6 +402,101 @@ section.sobre .flex{
     background-color: #BF2604;
 }
 
+/* Adicionar novas classes */
+
+.texto-fixo {
+    position: sticky;
+    margin-top: 150;
+    top: 200px;
+    flex: 1;
+    max-width: 450px; /* Aumenta a largura */
+    color: #BFBFBF;
+    font-size: 25px; /* Aumenta o tamanho da fonte */
+}
+
+.texto-fixo h3 {
+
+    font-size: 42px; /* Título ainda maior */
+    margin-bottom: 25px;
+}
+.texto-fixo h3 span {
+    color: #BF2604;
+    /* Título ainda maior */
+}
+
+.texto-fixo p {
+    font-size: 20px;
+    line-height: 1.6;
+}
+
+
+.projetos-scroll {
+    margin-top: 320px;
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+    margin-left: 250px; /* >>> empurra tudo para a direita */
+}
+
+
+/* Pequena descrição abaixo de cada projeto */
+.bloco-projeto {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 40px;
+    margin-bottom: 80px;
+}
+
+.descricao-direita, .descricao-esquerda {
+    max-width: 300px;
+    font-size: 18px;
+    color: #ddd;
+    line-height: 1.6;
+}
+
+/* Ajustes de posição */
+.descricao-direita {
+    text-align: left;
+}
+
+.descricao-esquerda {
+    text-align: right;
+}
+
+/* Deixa as imagens um pouco menores ainda se quiser */
+.img-port {
+    width: 260px;
+    height: 340px;
+}
+
+
+/* Zig-zag dos projetos */
+.projeto-1 {
+    margin-left: 250px;
+}
+.projeto-2 {
+    margin-right:250px;
+}
+.projeto-3 {
+    margin-left: 250px;
+}
+.projeto-4 {
+    margin-right: 250px;
+}
+.projeto-5 {
+    margin-left: 250px;
+}
+
+/* Pequeno ajuste no flex da section projetos */
+section.projetos .flex {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-around;
+    gap: 60px;
+    margin: 40px 0;
+}
 
 
 /* Estilo do Projeto */
@@ -430,18 +517,49 @@ section.projetos .flex{
 }
 
 
-.img-port{
-    width: 360px;           /* ocupa toda a largura do container */
-    height: 460px;
-    background-color: #BFBFBF; 
-    background-size: cover;
-    background-position: 0% 100%; 
-   transition: .99s;
-   cursor: pointer;
-   border-radius: 40px;
-   position: relative;
   
-}
+ 
+
+
+.bloco-projeto {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 40px;
+    margin-bottom: 80px;
+  }
+  
+  .row-reverse {
+    flex-direction: row-reverse; /* <<< IMPORTANTE: inverte a ordem imagem <-> texto */
+  }
+  
+  .descricao-direita, .descricao-esquerda {
+    max-width: 300px;
+    font-size: 18px;
+    color: #ddd;
+    line-height: 1.6;
+  }
+  
+  .descricao-direita {
+    text-align: left;
+  }
+  
+  .descricao-esquerda {
+    text-align: right;
+  }
+  
+  .img-port {
+    width: 260px;
+    height: 340px;
+    border-radius: 40px;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    cursor: pointer;
+    transition: 0.5s;
+  }
+  
+
 
 .img-port:hover{
     background-position: 50% 100%; 
@@ -590,17 +708,6 @@ footer .line-footer p a{
     
     }
 
-    .especialidades .especialidades-box{
-        box-shadow: 0px 0px 10px #BFBFBF;
-        transform: scale(1.05);
-        display: inline-block;
-        
-        background-color: rgba(255, 255, 255, 0.004); /* fundo translúcido */
-            
-            backdrop-filter: blur(10px); /* desfoque o que está por trás */
-            -webkit-backdrop-filter: blur(10px); /* suporte para Safari */
-    }
-
     /* Estilo Sobre mim */
     section.sobre{
         padding: 80px 8%;
@@ -622,6 +729,10 @@ footer .line-footer p a{
     }
 
     /* Estilo do Projeto */
+
+    .texto-fixo{
+        display: none;
+    }
     section.projetos{
         padding: 80px 8%;
         
@@ -660,4 +771,68 @@ footer .line-footer p a{
 
 }
 
+@media (max-width: 768px) {
+    .flex {
+      flex-direction: column;
+      align-items: center;
+      padding: 0 10px; /* Adiciona um pouco de espaço nas laterais */
+    }
+  
+    .projetos-scroll {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        width: 100%;
+        padding: 0 10px;
+        margin: 0 auto;
+    }
     
+    .bloco-projeto {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+        margin-bottom: 40px;
+        flex-wrap: wrap; /* Permite que os itens se ajustem à tela */
+        width: 100%;
+    }
+    
+  
+    .row-reverse {
+      flex-direction: column; /* Garante que o texto fique abaixo da imagem em telas pequenas */
+    }
+  
+    .img-port {
+      width: 80%;
+      height: 250px;
+      margin: 0 auto;
+       /* Centraliza as imagens */
+    }
+  
+    .descricao-direita,
+    .descricao-esquerda {
+      max-width: 90%;
+      font-size: 16px;
+      text-align: center;
+      margin: 0;
+    }
+  
+  
+  }
+  
+  @media (max-width: 480px) {
+    .img-port {
+      width: 100%;
+      height: 220px;
+    }
+  
+    .titulo {
+      font-size: 24px;
+    }
+  
+    .descricao-direita,
+    .descricao-esquerda {
+      font-size: 14px;
+    }
+  }
+  

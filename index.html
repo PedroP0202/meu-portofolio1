@@ -57,8 +57,8 @@
                     <ul>
                         <li><a href="#inicio">Início</a></li> 
                         <li><a href="#especialidades2">Especialidades</a></li>
-                        <li><a href="#sobre2">Sobre</a></li>
-                        <li><a href="#projetos2">Projetos</a></li>
+                        <li><a href="#sobre">Sobre</a></li>
+                        <li><a href="#projetos">Projetos</a></li>
                         <li><a href="#contato">Contato</a></li>
                     </ul>
                 </nav>
@@ -87,13 +87,10 @@
 
             </div><!-- .interface -->
         </section><!-- .topo-do-site -->
-
         <section id="especialidades2" class ="espaco-entre-section"> </section><!-- .especialidades2 -->
-
         <section id="especialidades" class="especialidades">
             <div class="interface">
 
-                
                 <h2 class="titulo">MINHAS ESPECIALIDADES<span>.</span></h2>
               
               <div class="flex">
@@ -121,16 +118,14 @@
             </div><!-- .interface -->
 
         </section><!-- .especialidades -->
-
-        <section id="sobre2" class ="espaco-entre-section"> </section><!-- .especialidades2 -->
-
+        <section id="sobre2" class ="espaco-entre-section"> </section><!-- .espaco-entre-section -->
         <section id="sobre" class="sobre">
             <div class="interface">
 
                 <h2 class="titulo">SOBRE MIM<span>.</span></h2>
                 <div class="flex">
                     <div class="img-sobre">
-                        <img src="imagens/B449185E-5527-4DA2-A0CF-5833ECDEC1CE.jpeg" alt="Imagem sobre mim" class="imagem-ajustada">
+                        <img src="imagens/B449185E-5527-4DA2-A0CF-5833ECDEC1CE.heic" alt="Imagem sobre mim" class="imagem-ajustada">
                     </div><!-- .img-sobre -->
                     <div class="txt-sobre">
                         <h2>Ola, Sou o <span>Pedro Piedade.</span></h2>
@@ -154,42 +149,91 @@
 
         </section><!-- .sobre -->
 
+        
         <section id="projetos2" class ="espaco-entre-section"> </section><!-- .especialidades2 -->
-
         <section id="projetos" class="projetos">
-            <div class="interface"> 
-                <h2 class="titulo">
-                    MEUS PROJETOS<span>.</span>
-                </h2>
-                <div class="flex">
+            <div class="container">
+              <h2 class="titulo">
+                MEUS PROJETOS<span>.</span>
+              </h2>
+          
+              <div class="flex">
+                <!-- Texto fixo do lado esquerdo -->
+                <div class="texto-fixo">
+                  <h3>Veja alguns dos meus projetos incríveis <span>!</span></h3>
+                  <p>Explore cada um deslizando para baixo.</p>
+                </div>
+          
+                <!-- Projetos -->
+                <div class="projetos-scroll">
+          
+                  <!-- Projeto 1 - Imagem à esquerda -->
+                  <div class="bloco-projeto">
                     <div class="img-port" style="background-image: url(imagens/ChatGPT\ Image\ 12_04_2025\,\ 21_13_28.png);">
-                        <div class="overlay">Batalha Naval</div><!-- .overlay -->
+                      <div class="overlay">Batalha Naval</div>
                     </div>
+                    <div class="descricao-direita">
+                      Um clássico jogo de batalha naval !
+                    </div>
+                  </div>
+          
+                  <!-- Projeto 2 - Imagem à direita -->
+                  <div class="bloco-projeto row-reverse">
                     <div class="img-port" style="background-image: url(imagens/Mortal\ Kombat\ \(2021\).jpg);">
-                        <div class="overlay"> Mortal P. C_ombat </div></div>
+                      <div class="overlay">Mortal P. C_ombat</div>
+                    </div>
+                    <div class="descricao-esquerda">
+                      Remake inspirado em Mortal Kombat, usando Linguagem C.
+                    </div>
+                  </div>
+          
+                  <!-- Projeto 3 - Imagem à esquerda -->
+                  <div class="bloco-projeto">
                     <div class="img-port" style="background-image: url(imagens/pexels-shvetsa-4226262.jpg);">
-                        <div class="overlay">Simulação Siga</div>
+                      <div class="overlay">Simulação Siga</div>
                     </div>
+                    <div class="descricao-direita">
+                      Simulador de sinais de trânsito para estudo de lógica, em SQL.
+                    </div>
+                  </div>
+          
+                  <!-- Projeto 4 - Imagem à direita -->
+                  <div class="bloco-projeto row-reverse">
                     <div class="img-port" style="background-image: url(imagens/pexels-emre-ozturk-113008085-18715887.jpg);">
-                        <div class="overlay">Máquina de Café</div>
+                      <div class="overlay">Máquina de Café</div>
                     </div>
-                    <div class="img-port" style="background-image: url(imagens/Captura\ de\ ecrã\ 2025-04-12\,\ às\ 21.54.37.png);">
-                        <div class="overlay">Projeto UNES</div>
+                    <div class="descricao-esquerda">
+                      Projeto de interface para uma máquina automática de café, Assembley.
                     </div>
-                </div><!-- .flex -->
-                
-
-            </div><!-- .interface -->
-        </section><!-- .projetos -->
+                  </div>
+          
+                  <!-- Projeto 5 - Imagem à esquerda -->
+                  <div class="bloco-projeto">
+                    <div class="img-port" style="background-image: url(imagens/Captura\ de\ ecrã\ 2025-04-12\,\ às\ 21.54.37.png);">
+                      <div class="overlay">Projeto UNES</div>
+                    </div>
+                    <div class="descricao-direita">
+                      Website institucional modelo, com HTML5 e CSS3.
+                    </div>
+                  </div>
+          
+                </div> <!-- projetos-scroll -->
+              </div> <!-- flex -->
+            </div> <!-- container -->
+          </section>
+          
+        
+        
+          
 
         <section id="contato" class="formulario">
             <div class="interface">
                 <h2 class="titulo">ENTRE EM CONTATO<span>.</span></h2>
-                <form action="https://formsubmit.co/pedropiedadebusiness@gmail.com" method="POST">
-                    <input type="text" name="name" placeholder="Seu nome" required>
-                    <input type="email" name="email" placeholder="Seu email" required>
-                    <input type="text" name="numero" placeholder="Numero" >
-                    <textarea name="mensagem" id="" cols="30" rows="10" placeholder="Sua mensagem"></textarea>
+                <form action="">
+                    <input type="text" placeholder="Seu nome" required>
+                    <input type="email" placeholder="Seu email" required>
+                    <input type="text" placeholder="Numero" required>
+                    <textarea name="" id="" cols="30" rows="10" placeholder="Sua mensagem"></textarea>
                     <div class="btn-enviar"><input type="submit" value="ENVIAR"></div>
                     
                 </form>
@@ -214,7 +258,7 @@
             </div><!-- .line-footer -->
                 
             <div class="line-footer">
-                <p><i class="bi bi-envelope-fill"></i> <a href="mailto:pedropiedadebusiness@gmail.com">pedropiedadebusiness@gmail.com </a></p>
+                <p><i class="bi bi-envelope-fill"></i> <a href="mailto:pedrobusnis@gmail.com">pedrobusnis@gmail.com </a></p>
 
             </div><!-- .line-footer -->
 
