@@ -29,6 +29,37 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     });
   });
   
-  setTimeout(() => {
-    window.scrollTo({top: targetElement.offsetTop, behavior: "smooth"});
-}, 100); // Adiciona um pequeno delay de 100ms
+//   setTimeout(() => {
+//     window.scrollTo({top: targetElement.offsetTop, behavior: "smooth"});
+// }, 100); // Adiciona um pequeno delay de 100ms
+
+window.addEventListener('scroll', () => {
+  const section = document.getElementById('projetos');
+  const texto = document.getElementById('texto-f');
+  if (!section || !texto) return;
+
+  const scrollTop = window.scrollY;
+  const sectionTop = section.offsetTop;
+  const sectionHeight = section.offsetHeight;
+  const sectionBottom = sectionTop + sectionHeight;
+
+  if (scrollTop < sectionTop) {
+    texto.style.opacity = 0; // Antes da section → invisível
+
+  } else if (scrollTop > sectionBottom) {
+    texto.style.opacity = 0; // Depois da section → invisível
+  } else {
+    // Dentro da section → opacidade de 0 a 1 até ao meio, depois de 1 a 0
+
+    const progress = (scrollTop - sectionTop) / sectionHeight;
+    let opacity;
+    if (progress < 0.1) {
+      opacity = progress * 5; // De 0 a 1
+    } else {
+      opacity = (1 - progress) * 1; // De 1 a 0
+    }
+    // Faz fade in e depois fade out
+    texto.style.opacity = opacity;
+  }
+});
+
