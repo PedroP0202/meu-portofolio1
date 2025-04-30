@@ -314,12 +314,18 @@ section.especialidades .flex{
         -webkit-backdrop-filter: blur(10px); /* suporte para Safari */
 }
 
+
 .especialidades .especialidades-box i{
     font-size: 60px;
     color: #BFBFBF;
     margin-bottom: 20px;
 }
 
+.especialidades .sub-especialidades1 i{
+    font-size: 35px;
+    align-items: center;
+    
+}
 .especialidades .especialidades-box h3{
     font-size: 28px;
     margin: 15px 0;
