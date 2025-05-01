@@ -129,12 +129,14 @@ header .btn-contato button{
     font-weight: 600px;
     border: 0px;
     cursor: pointer;
+    
 }
 header .btn-contato button:hover{
     box-shadow: 0px 0px 10px  rgb(255, 255, 255);
-    transform: scale(1.05);
+    transform: scale(1.01);
     display: inline-block;
-    transition: .4s;
+    transition: transform 0.4s, box-shadow 0.4s;
+    
     
 }
 
@@ -395,9 +397,17 @@ section.sobre .flex{
     font-size: 23px;
     cursor: pointer;
     margin: 0 5px;
+    text-align: center;
+    
     
     
 
+}
+.btn-social button i{
+    
+    font-size: 40px;
+    line-height: 60px;
+    transition: .4s;
 }
 
 .btn-social button:hover{
@@ -408,6 +418,31 @@ section.sobre .flex{
     background-color: #BF2604;
 }
 
+
+.botao-download {
+    background-color: #BFBFBF;
+    margin: 20px;
+    padding: 12px 40px ;
+    border-radius: 50px;
+    font-size: 19px;
+    font-weight: 600;        /* Corrigido: era '600px', agora está correto */
+    border: none;            /* Melhor do que '0px' */
+    cursor: pointer;
+    color: #000;             /* Adiciona cor ao texto, se necessário */
+    text-decoration: none;   /* Remove sublinhado se for <a> */
+    white-space: nowrap;     /* Impede quebra de linha dentro do botão */
+    display: inline-block;   /* Garante comportamento de botão */
+    transition: transform 0.4s, box-shadow 0.4s; 
+    /* move a transição para o botão */
+  }
+  
+  .botao-download:hover {
+    box-shadow: 0px 0px 10px rgb(255, 255, 255);
+    transform: scale(1.05);
+  }
+  
+ 
+  
 /* Adicionar novas classes */
 
 .texto-fixo {
