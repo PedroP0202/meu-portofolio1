@@ -304,7 +304,7 @@ section.especialidades .flex{
 }
 
 .especialidades .especialidades-box:hover{
-    box-shadow: 0px 0px 10px #BFBFBF;
+    box-shadow: 0px 0px 10px #00000082;
     transform: scale(1.05);
     display: inline-block;
     transition: .4s;
@@ -716,6 +716,16 @@ footer .line-footer p a{
     section.especialidades{
         padding: 80px 8%;
     
+    }
+    .especialidades .especialidades-box{
+        box-shadow: 0px 0px 10px #00000082;
+        transform: scale(1.05);
+        
+        transition: .4s;
+        background-color: rgba(255, 255, 255, 0.004); /* fundo translúcido */
+            
+            backdrop-filter: blur(10px); /* desfoque o que está por trás */
+            -webkit-backdrop-filter: blur(10px); /* suporte para Safari */
     }
 
     /* Estilo Sobre mim */
