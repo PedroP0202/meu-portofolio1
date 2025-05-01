@@ -549,6 +549,8 @@ section.projetos{
     padding: 80px 4%;
     box-shadow: 0px 0px 50px #BF2604;
     background-color: rgb(0, 0, 0) ;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), 
+    url(imagens/Gif\ animé.gif);
    
     
 }
