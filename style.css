@@ -785,6 +785,16 @@ footer .line-footer p a{
      
     }
 
+    .botao-download {
+           /* Impede quebra de linha dentro do botão */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;   /* Garante comportamento de botão */
+       
+        /* move a transição para o botão */
+      }
+
     /* Estilo do Projeto */
 
     .texto-fixo{
