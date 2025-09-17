@@ -118,6 +118,7 @@ header nav ul{
 }
 header nav.menu-desktop ul li{
     display: inline-block;
+    
     padding: 50px ;
 }
 header .btn-contato button{
@@ -225,6 +226,15 @@ padding: 20px 5%;
     z-index: 88888;
     display: none;
   
+}
+
+.btn-DIW{
+    background-color: #BF2604;
+    color: black;
+    padding: 8px 16px;
+    border-radius: 20px;
+    font-size: 16px;
+    font-weight: 600;
 }
 
 .btn-abrir-menu{
