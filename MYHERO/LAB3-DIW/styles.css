@@ -1,0 +1,214 @@
+* {
+
+    font-family: Arial, sans-serif;
+    background: white;
+    margin: 0;
+    padding: 15px 30px;
+}
+
+header nav a {
+
+    color: rgba(0, 0, 0, 0.622);
+    text-decoration: none;
+    display: inline-block;
+    transition: .2s;
+}
+
+.navegacao-inicio {
+    margin-bottom: 250px;
+
+}
+.navegacao-inicio2 {
+    margin-bottom: 20px;
+
+}
+
+.menu-mobile{
+    display: none;
+}
+
+
+.btn-abrir-menu i {
+    display: none;
+}
+
+header nav a:hover {
+    color: #7a1818;
+    transform: scale(1.13);
+
+}
+
+
+header {
+
+    padding: 20px;
+    text-align: center;
+}
+
+
+
+
+h1 {
+    text-align: center;
+    color: #7a1818;
+    font-size: 2.2em;
+}
+
+main h3 {
+    text-align: center;
+}
+
+.frase {
+    color: #379100;
+    font-weight: bold;
+    font-size: 1.1em;
+    font-style: italic;
+}
+
+main p {
+    padding: 15px 150px;
+    text-align: justify;
+    font-size: 18px;
+    line-height: 1.6;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+table,
+th,
+td {
+    border: 1px solid black;
+    border-collapse: collapse;
+    padding: 10px;
+    text-align: left;
+    margin: auto;
+}
+
+.imag-main {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 600px;
+    height: 400px;
+    border-radius: 50px;
+    margin-top: 20px;
+}
+
+.geolocali {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 600px;
+    height: 450px;
+    border-radius: 50px;
+    margin-top: 20px;
+}
+
+.img {
+
+    display: inline-flex;
+    width: 200px;
+    height: auto;
+    border-radius: 65px;
+    margin: 10px;
+}
+
+.img-container {
+    text-align: center;
+}
+
+.gif-bob {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin-top: 20px;
+}
+
+footer {
+    text-align: center;
+    font-size: 12px;
+    color: gray;
+    margin-top: 20px;
+}
+
+
+
+@media (max-width: 768px) {
+    * {
+        padding: 3px;
+        margin: 0px;
+    }
+
+    h2 {
+        font-size: 1.5em;
+        text-align: center;
+    }
+
+    .btn-abrir-menu i {
+        position: fixed;
+        display: block;
+        padding: 0;
+        color: #000000;
+        font-size: 40px;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        cursor: pointer;
+    }
+
+  
+        .menu-mobile {
+  display: none;
+  position: absolute;
+  top: 60px;   /* ajusta conforme a posição do botão */
+  right: 20px;
+  background: #fff;
+  border: 1px solid #ccc;
+  padding: 10px;
+}
+    .menu-mobile ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.menu-mobile li {
+  margin: 10px 0;
+}
+.menu-mobile a {
+  text-decoration: none;
+  color: #000;
+}
+
+.btn-abrir-menu:hover + .menu-mobile, .menu-mobile:hover {
+  display: block;
+}
+
+    .navegacao-inicio, .navegacao-inicio2 {
+        display: none;
+
+    }
+
+    main p {
+        padding: 10px 20px;
+        font-size: 16px;
+    }
+
+    .imag-main {
+        width: 100%;
+        height: auto;
+    }
+
+    .geolocali {
+        width: 100%;
+        height: auto;
+    }
+
+    .img {
+        width: 150px;
+        height: auto;
+        border-radius: 20px;
+    }
+}
