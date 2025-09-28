@@ -126,15 +126,18 @@ body .home-container{
 
 
 .home-container .home{ 
-
+background-image: url(https://plus.unsplash.com/premium_photo-1721832786163-ad059c4bc4d2?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-size: cover;
+    background-position: center;
     width: 65%;
     height: 60vh;
     padding : 20px;
     display: flex;
     justify-content: space-between;
     align-items:center;
-    background-color: rgba(242, 242, 242, 0.121); /* fundo translúcido */
-        backdrop-filter: blur(6px);
+    
+    
+        
         border-radius: 14px;
         box-shadow: 0px 0px 3px  rgba(65, 65, 65, 0.165);
         border: 1px ;
@@ -150,20 +153,24 @@ body .home-container{
 .home-container .home .home-texto h1{
       
     font-size: 19px;
-    color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
     text-align: center;
     margin-bottom: 50px;
 }
 .home-container .home .home-texto h1 span{
-    color: #BF2604;
-   
+    color: #ff3300;
+   font-size: 29px;
+   background-color: #ffffff3a;
+     backdrop-filter: blur(9px);
+  border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.702);
     text-align: center;
 }
 
 .home-container .home .home-texto P{
         
     font-size:  20px;
-    color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
     
     
 }
@@ -206,7 +213,7 @@ section.img-hub {
 .hub-title {
     margin-bottom: 24px;
     font-size: 1.6em;
-    color: #333;
+    color: #ffffff;
 }
 
 .hub-links a {
