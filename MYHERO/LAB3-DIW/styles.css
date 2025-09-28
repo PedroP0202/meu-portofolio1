@@ -18,12 +18,13 @@ header nav a {
     margin-bottom: 250px;
 
 }
+
 .navegacao-inicio2 {
     margin-bottom: 20px;
 
 }
 
-.menu-mobile{
+.menu-mobile {
     display: none;
 }
 
@@ -136,7 +137,7 @@ footer {
 
 
 
-@media (max-width: 768px) {
+@media screen and (max-width: 768px) {
     * {
         padding: 3px;
         margin: 0px;
@@ -159,34 +160,41 @@ footer {
         cursor: pointer;
     }
 
-  
-        .menu-mobile {
-  display: none;
-  position: absolute;
-  top: 60px;   /* ajusta conforme a posição do botão */
-  right: 20px;
-  background: #fff;
-  border: 1px solid #ccc;
-  padding: 10px;
-}
+
+    .menu-mobile {
+        display: none;
+        position: absolute;
+        top: 60px;
+        
+        right: 20px;
+        background: #fff;
+        border: 1px solid #ccc;
+        padding: 10px;
+    }
+
     .menu-mobile ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-.menu-mobile li {
-  margin: 10px 0;
-}
-.menu-mobile a {
-  text-decoration: none;
-  color: #000;
-}
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
 
-.btn-abrir-menu:hover + .menu-mobile, .menu-mobile:hover {
-  display: block;
-}
+    .menu-mobile li {
+        margin: 10px 0;
+    }
 
-    .navegacao-inicio, .navegacao-inicio2 {
+    .menu-mobile a {
+        text-decoration: none;
+        color: #000;
+    }
+
+    .btn-abrir-menu:hover+.menu-mobile,
+    .menu-mobile:hover {
+        display: block;
+    }
+
+
+    .navegacao-inicio,
+    .navegacao-inicio2 {
         display: none;
 
     }
