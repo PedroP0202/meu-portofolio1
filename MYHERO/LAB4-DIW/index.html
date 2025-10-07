@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LAB4</title>
+</head>
+
+<body>
+
+    <ul>
+        <li class="passar" onmouseover="mudarTexto(this)" onmouseout="voltarTexto(this)">
+            Passa aqui!!
+        </li>
+        <li class="btn-cores-texto">Talvez eu mude de cor</li>
+
+        <div class="btn-cores">
+
+            <button onclick="mudarCor('green')">Green</button>
+            <button onclick="mudarCor('Blue')">Blue</button>
+            <button onclick="mudarCor('orange')">Orange</button>
+
+
+        </div>
+
+        <li class="cor-ingles">
+            Escolha uma cor em inglês:
+            <input type="text" id="corInput" placeholder="ex: red, blue">
+            <button onclick="mudarCor()">OK</button>
+        </li>
+
+        <li class="cores-letras">
+            Escreva qualquer coisa:
+            <input type="text" id="corInput">
+        </li>
+
+
+        <li>
+            <p ondblclick="this.style.color = corAleatoria()">Dá um duplo clique em mim!</p>
+        </li>
+
+
+
+        <span class="contador">0</span>
+        <button onclick="cont()">Add</button>
+    </ul>
+
+    <div class= "cores-quadro" onmousemove="this.style.backgroundColor = corAleatoria()">Move o rato aqui! </div>
+
+
+    <!-- HTML já carregado! -->
+    <script src="scripts/main.js"></script>
+
+</body>
+
+</html>
