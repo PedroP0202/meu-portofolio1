@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LAB5</title>
+</head>
+
+<body>
+    <section class="container">
+
+
+
+        <ul>
+            <li class="passar" onmouseover="mudarTexto(this)" onmouseout="voltarTexto(this)">
+                Passa aqui!!
+            </li>
+            <br><br />
+            <li class="btn-cores-texto">Talvez eu mude de cor</li>
+
+            <div>
+                <button class="btn-cores" data-color="blue">Blue</button>
+                <button class="btn-cores" data-color="red">Red</button>
+                <button class="btn-cores" data-color="green">Green</button>
+
+
+            </div>
+
+            <br><br />
+
+            <li class="cor-ingles">
+                Escolha uma cor em inglês:
+                <input type="text" id="corInput" placeholder="ex: red, blue">
+                <button onclick="mudarCor()">OK</button>
+            </li>
+
+            <br><br />
+
+            <li class="cores-letras">
+                Escreva qualquer coisa:
+                <input type="text" id="corInput">
+            </li>
+
+
+            <li>
+                <p ondblclick="this.style.color = corAleatoria()">Dá um duplo clique em mim!</p>
+            </li>
+
+
+            <li>
+                <form>
+                    <input id="nome" type="text" placeholder="insira o seu nome">
+                    <input id="idade" type="number" placeholder="insira a sua idade">
+                    <input type="submit">
+                    <P id="mensagem"></P>
+                </form>
+            </li>
+
+
+
+
+
+
+
+
+
+
+        </ul>
+
+        <li>
+            <div class="cores-quadro" onmousemove="this.style.backgroundColor = corAleatoria()">Move o rato aqui! </div>
+        </li>
+
+
+
+        <li>
+            Escolha uma cor
+            <select>
+                <option value="red">Red</option>
+                <option value="blue">Blue</option>
+                <option value="green">Green</option>
+                <option value="yellow">Yellow</option>
+                <option value="orange">Orange</option>
+                <option value="purple">Purple</option>
+                <option value="pink">Pink</option>
+                <option value="black">Black</option>
+                <option value="white">White</option>
+            </select>
+
+
+        </li>
+
+        <li>
+            <h1>0</h1>
+            <button id="btn-add">Incrementar</button>
+            <button id="btn-reset">Reset</button>
+        </li>
+
+
+        <li>
+
+            <p>Contador Automatico:</p>
+            <span class="contador">0</span>
+        </li>
+
+
+
+
+
+    </section>
+
+    <!-- HTML já carregado! -->
+    <script src="scripts/main.js"></script>
+
+</body>
+
+</html>

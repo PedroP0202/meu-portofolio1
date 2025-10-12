@@ -21,6 +21,7 @@ button.onclick = function () {
   const cor = input.value.trim();
   if (cor) {
     li.style.color = cor;
+    section.color = cor;
     li.firstChild.textContent = "Escolha uma cor em inglês: ";
   }
 }
