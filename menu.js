@@ -24,11 +24,11 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
   
       window.scrollTo({
         top: targetElement.offsetTop,
-        behavior: 'smooth'  // Isso garante que o scroll seja suave
+        behavior: 'smooth' 
       });
     });
   });
   
   setTimeout(() => {
     window.scrollTo({top: targetElement.offsetTop, behavior: "smooth"});
-}, 100); // Adiciona um pequeno delay de 100ms
+}, 100); 
