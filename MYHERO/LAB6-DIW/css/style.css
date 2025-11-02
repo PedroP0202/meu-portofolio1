@@ -50,6 +50,18 @@ h1 {
     color: var(--cor-primaria);
 }
 
+/* center nav on wide screens while keeping logo visible */
+.header-container {
+    position: relative;
+}
+
+.header-container nav {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
 
 
 
@@ -222,4 +234,13 @@ footer {
 button:focus {
     outline: 2px solid rgba(255,153,0,0.6);
     outline-offset: 2px;
+}
+
+@media (max-width: 900px) {
+    .header-container nav {
+        position: static;
+        transform: none;
+        left: auto;
+        top: auto;
+    }
 }
