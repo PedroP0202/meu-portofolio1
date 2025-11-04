@@ -1,4 +1,4 @@
-const API_TIME = 'https://worldtimeapi.org/api/timezone/Europe/Lisbon';
+const API_TIME = 'https://timeapi.io/api/Time/current/zone?timeZone=Europe/Lisbon';
 const API_WEATHER = 'https://api.open-meteo.com/v1/forecast?latitude=38.72&longitude=-9.14&current_weather=true';
 
 const clockEl = document.getElementById('clock');
@@ -14,16 +14,19 @@ function initClock() {
       return res.json();
     })
     .then(data => {
-      const serverDate = new Date(data.datetime);
+      const serverDate = new Date(
+        `${data.year}-${data.month}-${data.day} ${data.hour}:${data.minute}:${data.seconds}`
+      );
+
       offset = serverDate.getTime() - Date.now();
 
       setInterval(updateClock, 1000);
       updateClock();
 
-      
+
       updateWeather();
 
-     
+
       setInterval(updateWeather, 30 * 60 * 1000);
     })
     .catch(err => {

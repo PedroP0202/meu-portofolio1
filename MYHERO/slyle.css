@@ -38,14 +38,15 @@ body {
     
     background-color: #ffffff;
     
-    height: 500px;
-    width: 360px;
+    
+        width: min(340px, 90vw);
+    height: auto;
     border-radius: 35px ;
     
     margin-right: 7%;
     margin-top: 8%;
     
-    box-shadow: inset 0px 0px 10px rgba(0, 0, 0, 0.484);
+    box-shadow: inset 0px 0px 10px rgba(0, 0, 0, 0.664);
     
 
    
@@ -74,7 +75,7 @@ body {
     border-radius: 8px;
     color: rgb(0, 0, 0);
           font-size: 1.5rem;
-    margin: 15px 0px 0px 20px;
+    margin: 5px 0px 20px 20px;
     transform: translateY(6px);
     display:inline-block;
       
@@ -229,31 +230,30 @@ body .home-container{
 
 
 .home-container .home{ 
-background-image: 
-  linear-gradient(rgba(0, 0, 0, 0.377), rgba(0, 0, 0, 0.126)), 
-  url(imagens/gunnar-ridderstrom-TFJlpHvO-2k-unsplash.jpg);
- 
-
-    background-size:cover;
-    
-    
-   
+  background-image: 
+    linear-gradient(rgba(0, 0, 0, 0.377), rgba(0, 0, 0, 0.126)), 
+    url(imagens/gunnar-ridderstrom-TFJlpHvO-2k-unsplash.jpg);
 
 
-    width: 97%;
-    height: 85vh;
-    padding : 20px;
-    display: flex;
-    justify-content: space-between;
-    align-items:center;
-    
-    
-        
-        border-radius: 30px;
-        box-shadow: 0px 0px 3px  rgba(65, 65, 65, 0.165);
-        border: 1px ;
-    
+
+
+  background-size: cover;
+  width: 97%;
+  height: 85vh;
+  padding: 20px;
+
+
+  display: flex;
+  justify-content: center;  
+  align-items: center;
+  flex-wrap: wrap;           
+  gap: 30px;                 
+
+  border-radius: 30px;
+  box-shadow: 0px 0px 3px rgba(65, 65, 65, 0.165);
+  border: 1px;
 }
+
 .home-container .home .home-texto{
     margin-left: 100px;
     margin-bottom: 250px;
@@ -285,8 +285,8 @@ background-image:
   
     
 
-    width: 360px;   
-  height: auto;
+    width: min(340px, 90vw);
+    height: auto;
 
    margin-left: 0%;
   
@@ -440,3 +440,60 @@ section.img-hub {
   opacity: 0.9;
 }
 
+html {
+  font-size: 16px;
+}
+
+@media (max-width: 900px) {
+  html { font-size: 14px; }
+}
+
+@media (max-width: 600px) {
+  html { font-size: 12px; }
+}
+
+
+
+@media (max-width: 900px) {
+  .home-container .home {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  header .menu {
+    gap: 15px;
+  }
+
+  .home-container .home .home-texto {
+    margin: 0;
+  }
+}
+
+
+@media (max-width: 600px) {
+  .home-container{
+    height: auto;
+    padding-top: 80px;
+  }
+
+  .home-container .home {
+    height: auto;
+    padding: 30px 20px;
+  }
+
+  .home-container .home-texto h1 span {
+    font-size: 32px;
+  }
+
+  #date, #weather {
+    font-size: 0.9rem;
+  }
+
+  .hub-container {
+    grid-template-columns: 1fr; /* um cartão por linha */
+  }
+
+  .hub-links a {
+    height: 250px; /* reduz tamanho */
+  }
+}
