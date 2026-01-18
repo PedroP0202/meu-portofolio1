@@ -1,0 +1,499 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+
+    font-family: "Funnel Display", sans-serif;
+}
+
+body {
+    font-family:  "Funnel Display", sans-serif;
+    background: #ffffff;
+}
+.texto-back {
+    position: absolute;       
+    top: 17%;                  
+    left: 50%;                 
+    transform: translate(-50%, -50%);
+    font-size: 8.2em;
+    color: rgb(255, 255, 255); 
+    text-align: center;
+                 /* fica atrás */
+    pointer-events: none;     
+}
+
+.img-home{
+    
+    /* background-image: url(https://images.unsplash.com/photo-1759625793284-fedf5b26731c?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D); */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100%;
+
+    
+    
+}
+.img-minha{
+    
+    background-color: #ffffff;
+    
+    
+        width: min(340px, 90vw);
+    height: auto;
+    border-radius: 35px ;
+    
+    margin-right: 7%;
+    margin-top: 8%;
+    
+    box-shadow: inset 0px 0px 10px rgba(0, 0, 0, 0.664);
+    
+
+   
+
+    align-content: top;
+    
+   
+}
+
+.bi {
+    padding: 4px 9px;
+   
+   
+    
+    color: rgb(0, 0, 0);
+          font-size: 1.7rem;
+    margin: 15px 0px 0px 20px;
+    transform: translateY(6px);
+    display:inline-block;
+     
+}
+.nome-cartao {
+    padding: 4px 9px;
+   
+    
+    border-radius: 8px;
+    color: rgb(0, 0, 0);
+          font-size: 1.5rem;
+    margin: 5px 0px 20px 20px;
+    transform: translateY(6px);
+    display:inline-block;
+      
+}
+
+.img-hub{
+    background-color: #ffffff;
+    /* background-image: url(imagens/ruuucas.png); */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100%;
+    
+}
+
+.pag {
+    height: 100vh;
+    
+
+}
+
+.pag-projetos {
+    padding: 60px 0;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #ffffff;
+}
+
+/* //////// seccao do MENU \\\\\\\\\ */ 
+
+header{
+    padding: 10px ;
+    margin: 1 auto;
+    height: 60px;
+    width: 100%;
+    position: fixed;
+    z-index: 1000;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    align-content: center;
+    
+}
+header > .menu-bar{
+    display: flex;
+   
+    justify-content: space-between;
+    align-items:center;
+    position: fixed;
+    top: 10;
+    width: 96%;
+    height: 60px;
+
+    max-width: 100%;
+    margin: 1 auto;
+
+    
+       background: #ffffff3f; /* fundo translúcido */
+        backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: blur(10px); 
+        border-radius: 12px;
+        
+
+}
+
+
+header > .menu-bar {
+    position: fixed;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+header .menu {
+    position: relative; 
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+   
+
+
+
+header ul{
+    list-style: none;
+}
+header .menu{
+    width :auto;
+    gap: 30px;
+    padding: 50px;
+    display:flex;
+    align-items: center;
+    
+
+}
+header .menu a{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-size: 0.87em;
+    padding: 10px;
+    border-radius: 10px;
+   
+}
+
+header .menu a:hover{
+    color: #ffffff ;
+    background-color: rgb(0, 0, 0);
+    border-radius: 10px;
+    transform: scale(1.3);
+    transition: 0.1s;
+     
+}
+
+@media (max-width: 900px) {
+    header > .menu-bar {
+        position: fixed; /* keep fixed but don't translate horizontally */
+        left: 0;
+        transform: none;
+        width: 100%;
+    }
+    header .menu {
+        position: static;
+        left: auto;
+        transform: none;
+        padding: 10px;
+        gap: 12px;
+    }
+}
+
+header .menu-bar .logo img{
+    margin-left: 40px;
+    
+
+    width: 120px;   
+  height: auto;
+
+}
+/* //////// seccao do HOME \\\\\\\\\ */ 
+
+body .home-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 109vh;
+    
+ 
+    gap: 10px;
+}
+
+
+.home-container .home{ 
+  background-image: 
+    linear-gradient(rgba(0, 0, 0, 0.377), rgba(0, 0, 0, 0.126)), 
+    url(imagens/gunnar-ridderstrom-TFJlpHvO-2k-unsplash.jpg);
+
+
+
+
+  background-size: cover;
+  width: 97%;
+  height: 85vh;
+  padding: 20px;
+
+
+  display: flex;
+  justify-content: center;  
+  align-items: center;
+  flex-wrap: wrap;           
+  gap: 30px;                 
+
+  border-radius: 30px;
+  box-shadow: 0px 0px 3px rgba(65, 65, 65, 0.165);
+  border: 1px;
+}
+
+.home-container .home .home-texto{
+    margin-left: 100px;
+    margin-bottom: 250px;
+    padding: 20px;
+    justify-content:center;
+    align-items: center;
+   
+}
+.home-container .home .home-texto h1{
+      
+    font-size: 19px;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    margin-bottom: 35px;
+}
+.home-container .home .home-texto h1 span{
+    color: #f1f1f1;
+    font-family: "Funnel Display", sans-serif;
+   font-size: 50px;
+  
+    
+  border-radius: 8px;
+    
+   
+}
+
+
+.home-container .home img{
+  
+    
+
+    width: min(340px, 90vw);
+    height: auto;
+
+   margin-left: 0%;
+  
+border-radius: 30px;
+
+box-shadow: 0px 0px 10px rgba(44, 43, 43, 0.641);
+
+
+  
+}
+
+
+#clock {
+
+      font-family: "Bitcount Grid Single", system-ui;
+  font-optical-sizing: auto;
+  font-weight: 100;
+  font-style: normal;
+  font-variation-settings:
+    "slnt" 0,
+    "CRSV" 0.5,
+    "ELSH" 0,
+    "ELXP" 0;
+}
+
+#date {
+  font-size: 20px;
+  color: #ffffff;
+  font-weight: bold;
+  margin-top: 8px;
+}
+
+#weather {
+  font-size: 18px;
+  color: #ffffff;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+
+/* //////// seccao dos projectos \\\\\\\\\ */   
+
+
+section.img-hub {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 0rem 0;
+}
+
+.hub-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 40px;
+    width: 90%;
+}
+
+
+.section-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    gap: 2rem;
+}
+
+.new-drops {
+    font-size: 2.5em;
+    color: #000000;
+    margin-bottom: 1rem;
+    text-align: left;
+    width: 100%;
+    max-width: 1400px;
+    padding: 0 20px;
+}
+
+.new-dropsp {
+    font-size: 1.3em;
+    font-weight: 200;
+    color: #0000009b;
+    margin-bottom: 1rem;
+    text-align: left;
+    width: 100%;
+    max-width: 1400px;
+    padding: 0 20px;
+}
+
+.p-conteudo {
+   margin-top: 10px;
+    font-size: 0.8em;
+    font-weight: 200;
+    color: #0000009b;
+    
+    margin-bottom: 1rem;
+}
+
+
+
+.hub-links {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.hub-links a {
+    position: relative;
+    display: block;
+    height: 400px;
+    border-radius: 300px;
+    overflow: hidden;
+    background-size: cover;
+    background-position: center;
+    text-decoration: none;
+    color: #fff;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.hub-links a::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.214), rgba(0,0,0,0.1));
+  
+  
+
+}
+.hub-links a:hover {
+  transform: scale(1.03);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+  
+
+}
+.hub-links .overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  padding: 15px;
+  z-index: 1;
+}
+
+.hub-links .overlay h2 {
+  margin: 0;
+  font-size: 1.4rem;
+  font-weight: 600;
+}
+
+.hub-links .overlay p {
+  margin: 4px 0 0;
+  font-size: 0.9rem;
+  opacity: 0.9;
+}
+
+html {
+  font-size: 16px;
+}
+
+@media (max-width: 900px) {
+  html { font-size: 14px; }
+}
+
+@media (max-width: 600px) {
+  html { font-size: 12px; }
+}
+
+
+
+@media (max-width: 900px) {
+  .home-container .home {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  header .menu {
+    gap: 15px;
+  }
+
+  .home-container .home .home-texto {
+    margin: 0;
+  }
+}
+
+
+@media (max-width: 600px) {
+  .home-container{
+    height: auto;
+    padding-top: 80px;
+  }
+
+  .home-container .home {
+    height: auto;
+    padding: 30px 20px;
+  }
+
+  .home-container .home-texto h1 span {
+    font-size: 32px;
+  }
+
+  #date, #weather {
+    font-size: 0.9rem;
+  }
+
+  .hub-container {
+    grid-template-columns: 1fr; /* um cartão por linha */
+  }
+
+  .hub-links a {
+    height: 250px; /* reduz tamanho */
+  }
+}

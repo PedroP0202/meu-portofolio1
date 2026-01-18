@@ -1,0 +1,75 @@
+
+<!doctype html>
+<html lang="pt">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Checkout — Amazoni</title>
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+    <header>
+      <section class="header-container">
+        <h1>Amazoni</h1>
+        <nav aria-label="Navegação principal">
+          <ul>
+            <li><a href="index.html">Início</a></li>
+            <li><a href="index.html#produtos">Produtos</a></li>
+          </ul>
+        </nav>
+      </section>
+    </header>
+
+    <main class="checkout-page">
+      <section class="checkout-main">
+        <div class="checkout-summary">
+          <h2>Resumo do Cesto</h2>
+          <div id="itens-carrinho" class="itens-list"></div>
+          <div class="checkout-subtotal">
+            <span>Subtotal</span>
+            <strong id="subtotal">€0.00</strong>
+          </div>
+        </div>
+
+        <aside class="checkout-form">
+          <h2>Pagamento</h2>
+
+          <label class="field">
+            <span>És estudante do DEISI?</span>
+            <input type="checkbox" id="estudante">
+          </label>
+
+          <label class="field">
+            <span>Cupão de desconto</span>
+            <input type="text" id="cupao" placeholder="Ex: DESCONTO10">
+          </label>
+
+          <div class="field">
+            <label for="nome"><span>Nome</span></label>
+            <input id="nome" type="text" placeholder="Nome completo (opcional)">
+          </div>
+
+          <div class="field">
+            <label for="email"><span>Email</span></label>
+            <input id="email" type="email" placeholder="teu@exemplo.com (opcional)">
+          </div>
+
+          <div class="total-line">
+            <span>Total a pagar</span>
+            <strong id="total">€0.00</strong>
+          </div>
+
+          <button id="comprar-btn" class="buy-btn">Pagar agora</button>
+
+          <div id="resultado-compra" class="resultado"></div>
+        </aside>
+      </section>
+    </main>
+
+    <footer>
+      <p> &copy; 2025 Amazoni — Projeto de exemplo</p>
+    </footer>
+
+    <script src="scripts/checkout.js"></script>
+  </body>
+</html>
