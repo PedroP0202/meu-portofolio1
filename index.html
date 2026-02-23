@@ -8,7 +8,9 @@
   <!-- Google Fontes -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Funnel+Display:wght@300..800&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Outfit:wght@400;700;900&display=swap"
+    rel="stylesheet">
   <!-- fim Google Fontes -->
   <!-- Bootstrap icon's -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
@@ -39,7 +41,6 @@
           <li><a href="#especialidades2">Especialidades</a></li>
           <li><a href="#sobre">Sobre</a></li>
           <li><a href="#projetos">Projetos</a></li>
-          <li><a href="MYHERO/index.html"><span class="btn-DIW">D.Interfaces Web</span></a></li>
         </ul>
       </nav>
 
@@ -76,81 +77,118 @@
 
   <main>
     <section id="inicio" class="topo-do-site">
-      <div class="interface">
-        <div class="flex">
-          <div class="txt-topo-site">
-            <h1>Just one <span>Dev.</span></h1>
-            <p>O que difere um loco de um genio é que apenas um deles imagina o resultado.</p>
-
-          </div><!-- .txt-topo-site -->
-          <div class="img-topo-site">
-
-          </div><!-- .img-topo-site -->
-
-        </div><!-- .flex -->
-
-      </div><!-- .interface -->
+      <div class="split-layout">
+        <div class="split-left">
+          <h1 class="massive-title">Just one<br><span class="accent-text">Dev.</span></h1>
+          <p class="subtitle">O que difere um louco de um génio é que apenas um deles imagina o resultado.</p>
+        </div>
+        <div class="split-right">
+          <!-- Background Image handled by CSS -->
+        </div>
+      </div>
     </section><!-- .topo-do-site -->
     <section id="especialidades2" class="espaco-entre-section"> </section><!-- .especialidades2 -->
-    <section id="especialidades" class="especialidades">
+    <section id="especialidades" class="especialidades reveal">
+      <div class="bg-glow"></div>
       <div class="interface">
 
         <h2 class="titulo">MINHAS ESPECIALIDADES<span>.</span></h2>
 
-        <div class="flex">
+        <div class="editorial-grid">
 
-          <div class="especialidades-box">
-            <i class="bi bi-file-earmark-code"></i>
-            <h3>Website</h3>
-            <p>Desenvolvimento de sites responsivos e otimizados.</p>
-          </div><!-- .especialidades-box -->
+          <div class="editorial-card">
+            <span class="outline-number">01</span>
+            <div class="card-content">
+              <h3>Backend Dev</h3>
+              <p>Bases sólidas no desenvolvimento de lógica server-side e resolução de problemas, utilizando
+                <strong>Java</strong>, <strong>C</strong> e bases de dados relacionais <strong>SQL</strong>.
+              </p>
+            </div>
+          </div><!-- .editorial-card -->
 
-          <div class="especialidades-box">
-            <i class="bi bi-code-slash"></i>
-            <h3>Coding</h3>
-            <p>Gosto de transformar ideias em código funcional, criando experiências digitais intuitivas e bem
-              estruturadas.</p>
-          </div><!-- .especialidades-box -->
+          <div class="editorial-card">
+            <span class="outline-number">02</span>
+            <div class="card-content">
+              <h3>Web & Frontend</h3>
+              <p>Criação de interfaces responsivas e otimizadas com forte impacto visual. Profissional com
+                <strong>HTML</strong>, <strong>CSS</strong>, <strong>JavaScript</strong>, e
+                <strong>React/Next.js</strong>.
+              </p>
+            </div>
+          </div><!-- .editorial-card -->
 
-          <div class="especialidades-box">
-            <i class="bi bi-camera-reels"></i>
-            <h3>Video editing</h3>
-            <p>Transformo ideias em vídeos dinâmicos e envolventes, com foco em cortes precisos, ritmo visual e
-              narrativa clara.</p>
-          </div><!-- .especialidades-box -->
+          <div class="editorial-card">
+            <span class="outline-number">03</span>
+            <div class="card-content">
+              <h3>IT Ops & QA</h3>
+              <p>Gestão de infraestrutura, resolução rápida de incidentes (Help Desk técnico) e implantação de Sistemas
+                Operativos em larga escala.</p>
+            </div>
+          </div><!-- .editorial-card -->
 
-        </div><!-- .flex -->
+        </div><!-- .editorial-grid -->
 
       </div><!-- .interface -->
 
     </section><!-- .especialidades -->
 
     <section id="sobre" class="sobre">
+      <div class="bg-glow" style="top: 20%; left: 80%;"></div>
       <div class="interface">
 
         <h2 class="titulo">SOBRE MIM<span>.</span></h2>
-        <div class="flex">
-          <div class="img-sobre">
-            <img src="imagens/B449185E-5527-4DA2-A0CF-5833ECDEC1CE.heic" alt="Imagem sobre mim" class="imagem-ajustada">
-          </div><!-- .img-sobre -->
-          <div class="txt-sobre">
-            <h2>Ola, Sou o <span>Pedro Piedade.</span></h2>
-            <p>Sou uma pessoa comunicativa, organizada e apaixonada
-              por tecnologia. Tenho facilidade para resolver problemas,
-              gosto de trabalhar em equipe e mantenho a calma sob
-              pressão. Nos meus momentos livres, dedico-me à fotografia,
-              corrida e projetos ligados ao universo automotivo.
-              Também tenho um carinho especial por cães e valorizo o
-              equilíbrio entre trabalho e lazer.</p>
+        <div class="editorial-split">
+          <div class="split-image-container">
+            <img src="imagens/B449185E-5527-4DA2-A0CF-5833ECDEC1CE.heic" alt="Imagem sobre mim"
+              class="aggressive-image">
+          </div><!-- .split-image-container -->
+          <div class="split-text-container reveal">
+            <h2 class="editorial-heading">Olá, Sou o<br><span class="accent-text">Pedro Piedade.</span></h2>
+            <p class="editorial-paragraph">Estudante de Engenharia Informática na Universidade Lusófona (2º Ano). Possuo
+              bases sólidas em Java, C e SQL, com especial foco em desenvolvimento Backend e resolução de problemas
+              estruturais.<br><br>
+              Sou fluente em inglês e movido por uma atitude de 'fazer acontecer'. O meu grande objetivo é aplicar os
+              meus conhecimentos técnicos em projetos inovadores e dominar rapidamente novas tecnologias Cloud num
+              ambiente profissional.</p>
 
             <div class="btn-social">
-              <a href="https://www.linkedin.com/in/pedro-piedade-a013b8299/"> <button><i
+              <a href="https://www.linkedin.com/in/pedro-piedade-a013b8299/" target="_blank"> <button><i
                     class="bi bi-linkedin"></i></button> </a>
-              <a href="https://github.com/PedroP0202"> <button><i class="bi bi-github"></i></button> </a>
+              <a href="https://github.com/PedroP0202" target="_blank"> <button><i class="bi bi-github"></i></button>
+              </a>
             </div><!-- .btn-social -->
-          </div><!-- .txt.sobre -->
 
-        </div><!-- .flex -->
+            <div class="cv-timeline"
+              style="margin-top: 50px; border-top: 1px solid rgba(255,255,255,0.1); padding-top: 30px;">
+              <h3 style="color: #fff; margin-bottom: 20px; font-size: 20px;">Experience & Education</h3>
+              <ul style="list-style: none; padding: 0; margin: 0; color: #888; font-size: 16px;">
+                <li style="margin-bottom: 20px;">
+                  <span
+                    style="color: var(--accent-color); font-weight: bold; font-size: 14px; letter-spacing: 0.1em; display:block; margin-bottom:5px;">[
+                    09/2024 - Present ]</span>
+                  <strong style="color: #fff; display:block;">Technical Support & Help Desk</strong> <span>Universidade
+                    Lusófona de Lisboa</span>
+                </li>
+                <li style="margin-bottom: 20px;">
+                  <span
+                    style="color: var(--accent-color); font-weight: bold; font-size: 14px; letter-spacing: 0.1em; display:block; margin-bottom:5px;">[
+                    09/2023 - Present ]</span>
+                  <strong style="color: #fff; display:block;">B.Sc. in Computer Engineering</strong> <span>Universidade
+                    Lusófona de Lisboa</span>
+                </li>
+                <li>
+                  <span
+                    style="color: var(--accent-color); font-weight: bold; font-size: 14px; letter-spacing: 0.1em; display:block; margin-bottom:5px;">[
+                    11/2025 ]</span>
+                  <strong style="color: #fff; display:block;">Operations Volunteer</strong> <span>Web Summit 2025 ·
+                    Lisbon</span>
+                </li>
+              </ul>
+            </div>
+
+          </div><!-- .split-text-container -->
+
+        </div><!-- .editorial-split -->
 
       </div><!-- .interface -->
 
@@ -164,69 +202,121 @@
           MEUS PROJETOS<span>.</span>
         </h2>
 
-        <div class="flex">
-          <!-- Texto fixo do lado esquerdo -->
-          <div class="texto-fixo">
-            <h3>Veja alguns dos meus projetos incríveis <span>!</span></h3>
-            <p>Explore cada um deslizando para baixo.</p>
-          </div>
+        <div class="projetos-mural">
 
-          <!-- Projetos -->
-          <div class="projetos-scroll">
-
-            <!-- Projeto 1 - Imagem à esquerda -->
-            <div class="bloco-projeto">
-              <div class="img-port" style="background-image: url(imagens/ChatGPT\ Image\ 12_04_2025\,\ 21_13_28.png);">
-                <div class="overlay">Batalha Naval</div>
-              </div>
-              <div class="descricao-direita">
-                Um clássico jogo de batalha naval !
+          <!-- Projeto 1 (CV) -->
+          <a href="https://github.com/PedroP0202/calculadora-Cientifica-" target="_blank" class="projeto-card card-tall"
+            style="background-image: url('imagens/ChatGPT\\ Image\\ 12_04_2025\\,\\ 21_13_28.png'); display: block; text-decoration: none;">
+            <div class="overlay">
+              <div class="overlay-content">
+                <h3>Calculadora Científica</h3>
+                <p>Ferramenta de cálculo avançado com suporte para operações matemáticas complexas, em Java.</p>
+                <div style="margin-top: 15px; color: var(--accent-color); font-weight: bold; font-size: 14px;">VER NO
+                  GITHUB <i class="bi bi-arrow-up-right"></i></div>
               </div>
             </div>
+          </a>
 
-            <!-- Projeto 2 - Imagem à direita -->
-            <div class="bloco-projeto row-reverse">
-              <div class="img-port" style="background-image: url(imagens/Mortal\ Kombat\ \(2021\).jpg);">
-                <div class="overlay">Mortal P. C_ombat</div>
-              </div>
-              <div class="descricao-esquerda">
-                Remake inspirado em Mortal Kombat, usando Linguagem C.
+          <!-- Projeto 2 (CV) -->
+          <a href="https://github.com/PedroP0202/Mortal-C-Kombate-Pandora" target="_blank"
+            class="projeto-card card-wide"
+            style="background-image: url('imagens/Mortal\\ Kombat\\ \\(2021\\).jpg'); display: block; text-decoration: none;">
+            <div class="overlay">
+              <div class="overlay-content">
+                <h3>Mortal-C-Kombate-Pandora</h3>
+                <p>Desenvolvimento de um motor de jogo focado em otimização de algoritmos e interação de estado profundo
+                  usando a linguagem C.</p>
+                <div style="margin-top: 15px; color: var(--accent-color); font-weight: bold; font-size: 14px;">VER NO
+                  GITHUB <i class="bi bi-arrow-up-right"></i></div>
               </div>
             </div>
+          </a>
 
-            <!-- Projeto 3 - Imagem à esquerda -->
-            <div class="bloco-projeto">
-              <div class="img-port" style="background-image: url(imagens/pexels-shvetsa-4226262.jpg);">
-                <div class="overlay">Simulação Siga</div>
-              </div>
-              <div class="descricao-direita">
-                Simulador de sinais de trânsito para estudo de lógica, em SQL.
+          <!-- Projeto 3 (GitHub) -->
+          <a href="https://github.com/PedroP0202/LLMRockPaperScissors" target="_blank" class="projeto-card"
+            style="background-image: url('imagens/pexels-shvetsa-4226262.jpg'); display: block; text-decoration: none;">
+            <div class="overlay">
+              <div class="overlay-content">
+                <h3>LLMRockPaperScissors</h3>
+                <p>Projeto focado em simulação e interação utilizando modelos de linguagem (LLM).</p>
+                <div style="margin-top: 15px; color: var(--accent-color); font-weight: bold; font-size: 14px;">VER NO
+                  GITHUB <i class="bi bi-arrow-up-right"></i></div>
               </div>
             </div>
+          </a>
 
-            <!-- Projeto 4 - Imagem à direita -->
-            <div class="bloco-projeto row-reverse">
-              <div class="img-port" style="background-image: url(imagens/pexels-emre-ozturk-113008085-18715887.jpg);">
-                <div class="overlay">Máquina de Café</div>
-              </div>
-              <div class="descricao-esquerda">
-                Projeto de interface para uma máquina automática de café, Assembley.
+          <!-- Projeto 4 (GitHub) -->
+          <a href="https://github.com/PedroP0202/trabalho-fisica-lancamento-de-um-projectil" target="_blank"
+            class="projeto-card"
+            style="background-image: url('imagens/pexels-emre-ozturk-113008085-18715887.jpg'); display: block; text-decoration: none;">
+            <div class="overlay">
+              <div class="overlay-content">
+                <h3>Simulador de Física</h3>
+                <p>Esqueleto inicial para o trabalho de Fundamentos de Física (DEISI - ULHT) - Lançamento de Projétil.
+                </p>
+                <div style="margin-top: 15px; color: var(--accent-color); font-weight: bold; font-size: 14px;">VER NO
+                  GITHUB <i class="bi bi-arrow-up-right"></i></div>
               </div>
             </div>
+          </a>
 
-            <!-- Projeto 5 - Imagem à esquerda -->
-            <div class="bloco-projeto">
-              <div class="img-port"
-                style="background-image: url(imagens/Captura\ de\ ecrã\ 2025-04-12\,\ às\ 21.54.37.png);">
-                <div class="overlay">Projeto UNES</div>
-              </div>
-              <div class="descricao-direita">
-                Website institucional modelo, com HTML5 e CSS3.
+
+
+          <!-- Projeto 5 (GitHub Extra) -->
+          <a href="https://github.com/PedroP0202/zenith" target="_blank" class="projeto-card"
+            style="background: linear-gradient(45deg, #111, #222); display: block; text-decoration: none;">
+            <div class="overlay">
+              <div class="overlay-content">
+                <h3>Zenith</h3>
+                <p>Website project in development.</p>
+                <div style="margin-top: 15px; color: var(--accent-color); font-weight: bold; font-size: 14px;">VER NO
+                  GITHUB <i class="bi bi-arrow-up-right"></i></div>
               </div>
             </div>
+          </a>
 
-          </div> <!-- projetos-scroll -->
-        </div> <!-- flex -->
+          <!-- Projeto 6 (GitHub Extra - SGD) -->
+          <a href="https://github.com/PedroP0202/-Sistema-de-Gestao-Documental--SGD-" target="_blank"
+            class="projeto-card card-wide"
+            style="background: linear-gradient(45deg, #181818, #000); display: block; text-decoration: none;">
+            <div class="overlay">
+              <div class="overlay-content">
+                <h3>Sistema de Gestão Documental</h3>
+                <p>Plataforma e arquitetura de gestão documental corporativa (SGD).</p>
+                <div style="margin-top: 15px; color: var(--accent-color); font-weight: bold; font-size: 14px;">VER NO
+                  GITHUB <i class="bi bi-arrow-up-right"></i></div>
+              </div>
+            </div>
+          </a>
+
+          <!-- Projeto 7 (GitHub Extra - Batalha Naval) -->
+          <a href="https://github.com/PedroP0202/Batalha---naval---" target="_blank" class="projeto-card card-tall"
+            style="background: linear-gradient(45deg, #0a0a0a, #1a1a1a); display: block; text-decoration: none;">
+            <div class="overlay">
+              <div class="overlay-content">
+                <h3>Batalha Naval</h3>
+                <p>Implementação do clássico jogo de tabuleiro Batalha Naval com foco em lógica de posicionamento de
+                  navios.</p>
+                <div style="margin-top: 15px; color: var(--accent-color); font-weight: bold; font-size: 14px;">VER NO
+                  GITHUB <i class="bi bi-arrow-up-right"></i></div>
+              </div>
+            </div>
+          </a>
+
+          <!-- Projeto 8 (GitHub Extra - Máquina Café) -->
+          <a href="https://github.com/PedroP0202/M-quina-de-cafe" target="_blank" class="projeto-card"
+            style="background: linear-gradient(45deg, #222, #050505); display: block; text-decoration: none;">
+            <div class="overlay">
+              <div class="overlay-content">
+                <h3>Máquina de Café</h3>
+                <p>Simulação e lógica de funcionamento de uma Máquina de Café em linguagem de baixo nível.</p>
+                <div style="margin-top: 15px; color: var(--accent-color); font-weight: bold; font-size: 14px;">VER NO
+                  GITHUB <i class="bi bi-arrow-up-right"></i></div>
+              </div>
+            </div>
+          </a>
+
+        </div> <!-- projetos-mural -->
       </div> <!-- container -->
     </section>
 
@@ -234,7 +324,7 @@
 
 
 
-    <section id="contato" class="formulario">
+    <section id="contato" class="formulario reveal">
       <div class="interface">
         <h2 class="titulo">ENTRE EM CONTATO<span>.</span></h2>
         <form action="">
@@ -274,6 +364,27 @@
     </div><!-- .interface -->
   </footer>
 
+  <script>
+    // Reveal Animations
+    const observerOptions = {
+      root: null,
+      rootMargin: "0px",
+      threshold: 0.15
+    };
+
+    const observer = new IntersectionObserver((entries, observer) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('active');
+          observer.unobserve(entry.target);
+        }
+      });
+    }, observerOptions);
+
+    document.querySelectorAll('.reveal').forEach((el) => {
+      observer.observe(el);
+    });
+  </script>
 </body>
 
 </html>
