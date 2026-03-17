@@ -7,7 +7,6 @@ const weatherEl = document.getElementById('weather');
 let offset = 0;
 
 function initClock() {
-  // ----- hora -----
   fetch(API_TIME)
     .then(res => {
       if (!res.ok) throw new Error('Erro ao obter hora');
@@ -16,23 +15,19 @@ function initClock() {
     .then(data => {
       const serverDate = new Date(data.datetime);
       offset = serverDate.getTime() - Date.now();
-
       setInterval(updateClock, 1000);
       updateClock();
-
-      
       updateWeather();
-
-     
       setInterval(updateWeather, 30 * 60 * 1000);
     })
     .catch(err => {
       console.error(err);
-      clockEl.textContent = 'Erro ao obter hora';
+      if (clockEl) clockEl.textContent = 'Erro ao obter hora';
     });
 }
 
 function updateClock() {
+  if (!clockEl || !dateEl) return;
   const now = new Date(Date.now() + offset);
   const hh = String(now.getHours()).padStart(2, '0');
   const mm = String(now.getMinutes()).padStart(2, '0');
@@ -43,6 +38,7 @@ function updateClock() {
 }
 
 function updateWeather() {
+  if (!weatherEl) return;
   fetch(API_WEATHER)
     .then(res => {
       if (!res.ok) throw new Error('Erro ao obter clima');
@@ -58,4 +54,78 @@ function updateWeather() {
     });
 }
 
+// ==========================================
+// GLOBAL MOUSE REACTIVITY (SPOTLIGHT)
+// ==========================================
+const mouseGlow = document.querySelector('[data-mouse-glow]');
+
+let mouseX = 0;
+let mouseY = 0;
+let glowX = 0;
+let glowY = 0;
+
+if (mouseGlow) {
+  window.addEventListener('mousemove', (e) => {
+    mouseX = e.clientX;
+    mouseY = e.clientY;
+  });
+
+  function animateGlow() {
+    const lerpFactor = 0.08; // Very soft, fluid follow
+    glowX += (mouseX - glowX) * lerpFactor;
+    glowY += (mouseY - glowY) * lerpFactor;
+
+    mouseGlow.style.transform = `translate3d(${glowX}px, ${glowY}px, 0) translate(-50%, -50%)`;
+    requestAnimationFrame(animateGlow);
+  }
+  requestAnimationFrame(animateGlow);
+}
+
+// ==========================================
+// FLOATING NAV HIGHLIGHT
+// ==========================================
+const navLinks = document.querySelectorAll('.floating-nav a');
+const sections = document.querySelectorAll('section');
+
+function highlightNav() {
+  let scrollPos = window.scrollY + 100;
+
+  sections.forEach(section => {
+    if (scrollPos >= section.offsetTop && scrollPos < section.offsetTop + section.offsetHeight) {
+      navLinks.forEach(link => {
+        link.classList.remove('active');
+        if (link.getAttribute('href') === `#${section.id}`) {
+          link.classList.add('active');
+        }
+      });
+    }
+  });
+}
+
+window.addEventListener('scroll', highlightNav);
+
+// ==========================================
+// HERO PARALLAX (REFINED)
+// ==========================================
+const heroSection = document.getElementById('inicio');
+const heroTextSide = document.querySelector('.hero-text-side');
+
+if (heroSection && heroTextSide) {
+  heroSection.addEventListener('mousemove', (e) => {
+    const x = (window.innerWidth / 2 - e.clientX) / 30;
+    const y = (window.innerHeight / 2 - e.clientY) / 30;
+    heroTextSide.style.transform = `translate3d(${x}px, ${y}px, 0)`;
+  });
+
+  heroSection.addEventListener('mouseleave', () => {
+    heroTextSide.style.transition = 'transform 0.6s ease-out';
+    heroTextSide.style.transform = 'translate3d(0, 0, 0)';
+  });
+
+  heroSection.addEventListener('mouseenter', () => {
+    heroTextSide.style.transition = 'none';
+  });
+}
+
 initClock();
+highlightNav();
