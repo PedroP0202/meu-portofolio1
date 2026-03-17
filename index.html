@@ -27,56 +27,67 @@
 <body>
   <div class="mouse-glow" data-mouse-glow></div>
 
-  <!-- Global Mouse Glow -->
-  <div class="mouse-glow" data-mouse-glow></div>
+  <header>
+    <div class="interface">
+      <div class="logo">
+        <a href="#section1">
+          <img src="imagens/pedro.png" alt="Logo">
+
+        </a>
+
+      </div><!-- .logo -->
+      <nav class="menu-desktop">
+        <ul style="display: flex; align-items: center; gap: 0;">
+          <li><a href="#inicio">Início</a></li>
+          <li><a href="#especialidades2">Especialidades</a></li>
+          <li><a href="#sobre">Sobre</a></li>
+          <li><a href="#projetos">Projetos</a></li>
+        </ul>
+      </nav>
+
+      <div class="btn-contato">
+        <a href="#contato"><button>Contato</button></a>
+      </div>
+
+
+      <div class="btn-abrir-menu" id="btn-menu">
+        <i class="bi bi-list"></i>
+      </div><!-- .btn-abrir-menu -->
+
+      <div class="menu-mobile" id="menu-mobile">
+        <div class="btn-fechar">
+          <i class="bi bi-x"></i>
+        </div><!-- .btn-fechar -->
+        <nav>
+          <ul>
+            <li><a href="#inicio">Início</a></li>
+            <li><a href="#especialidades">Especialidades</a></li>
+            <li><a href="#sobre">Sobre</a></li>
+            <li><a href="#projetos">Projetos</a></li>
+            <li><a href="#contato">Contato</a></li>
+            <li><a href="MYHERO/index.html"><span class="btn-DIW">D.Interfaces Web</span></a></li>
+          </ul>
+        </nav>
+        <!-- .menu-mobile -->
+
+        <div class="overlay-menu" id="overlay-menu"></div><!-- .overlay-menu -->
+      </div><!-- .interface -->
+  </header>
 
 
 
   <main>
-    <div class="glow-bg"></div>
-    
     <section id="inicio" class="topo-do-site">
-      <div class="hero-content">
-        <div class="hero-text-side">
-          <div class="hero-badge">Open to work</div>
-          <span class="role-tag">Engenheiro Informático</span>
-          <h1 class="massive-title">Pedro<br>Piedade</h1>
-          
-          <div class="info-grid">
-            <div class="info-item">
-              <i class="bi bi-envelope"></i>
-              <span>pedrobusnis@gmail.com</span>
-            </div>
-            <div class="info-item">
-              <i class="bi bi-linkedin"></i>
-              <span>linkedin.com/in/pedro-piedade</span>
-            </div>
-            <div class="info-item">
-              <i class="bi bi-telephone"></i>
-              <span>+351 912 345 678</span>
-            </div>
-            <div class="info-item">
-              <i class="bi bi-geo-alt"></i>
-              <span>Lisboa, PT</span>
-            </div>
-          </div>
+      <div class="split-layout">
+        <div class="split-left">
+          <h1 class="massive-title">Just one<br><span class="accent-text">Dev.</span></h1>
+          <p class="subtitle">O que difere um louco de um génio é que apenas um deles imagina o resultado.</p>
         </div>
-        
-        <div class="profile-frame">
-          <a href="caminho/para/seu-cv.pdf" class="glass" style="position: absolute; top: 0; right: 0; padding: 10px 20px; border-radius: 50px; text-decoration: none; color: var(--accent-color); font-weight: bold; font-size: 14px; z-index: 10;">Download CV</a>
-          <img src="imagens/IMG_3630.HEIC" alt="Pedro Piedade" class="profile-image">
+        <div class="split-right">
+          <!-- Background Image handled by CSS -->
         </div>
       </div>
-    </section>
-
-    <!-- Floating Navigation -->
-    <nav class="floating-nav glass">
-      <a href="#inicio" class="active"><i class="bi bi-house"></i> Home</a>
-      <a href="#especialidades"><i class="bi bi-tools"></i> Skills</a>
-      <a href="#sobre"><i class="bi bi-person"></i> About</a>
-      <a href="#projetos"><i class="bi bi-code-slash"></i> Projects</a>
-      <a href="#contato"><i class="bi bi-envelope"></i> Links</a>
-    </nav>
+    </section><!-- .topo-do-site -->
     <section id="especialidades2" class="espaco-entre-section"> </section><!-- .especialidades2 -->
     <section id="especialidades" class="especialidades reveal">
       <div class="bg-glow"></div>

@@ -82,50 +82,26 @@ if (mouseGlow) {
 }
 
 // ==========================================
-// FLOATING NAV HIGHLIGHT
-// ==========================================
-const navLinks = document.querySelectorAll('.floating-nav a');
-const sections = document.querySelectorAll('section');
-
-function highlightNav() {
-  let scrollPos = window.scrollY + 100;
-
-  sections.forEach(section => {
-    if (scrollPos >= section.offsetTop && scrollPos < section.offsetTop + section.offsetHeight) {
-      navLinks.forEach(link => {
-        link.classList.remove('active');
-        if (link.getAttribute('href') === `#${section.id}`) {
-          link.classList.add('active');
-        }
-      });
-    }
-  });
-}
-
-window.addEventListener('scroll', highlightNav);
-
-// ==========================================
-// HERO PARALLAX (REFINED)
+// HERO PARALLAX EFFECT
 // ==========================================
 const heroSection = document.getElementById('inicio');
-const heroTextSide = document.querySelector('.hero-text-side');
+const heroTitleGroup = document.querySelector('.split-left');
 
-if (heroSection && heroTextSide) {
+if (heroSection && heroTitleGroup) {
   heroSection.addEventListener('mousemove', (e) => {
-    const x = (window.innerWidth / 2 - e.clientX) / 30;
-    const y = (window.innerHeight / 2 - e.clientY) / 30;
-    heroTextSide.style.transform = `translate3d(${x}px, ${y}px, 0)`;
+    const x = (window.innerWidth / 2 - e.clientX) / 50;
+    const y = (window.innerHeight / 2 - e.clientY) / 50;
+    heroTitleGroup.style.transform = `translate3d(${x}px, ${y}px, 0)`;
   });
 
   heroSection.addEventListener('mouseleave', () => {
-    heroTextSide.style.transition = 'transform 0.6s ease-out';
-    heroTextSide.style.transform = 'translate3d(0, 0, 0)';
+    heroTitleGroup.style.transition = 'transform 0.6s ease-out';
+    heroTitleGroup.style.transform = 'translate3d(0, 0, 0)';
   });
 
   heroSection.addEventListener('mouseenter', () => {
-    heroTextSide.style.transition = 'none';
+    heroTitleGroup.style.transition = 'none';
   });
 }
 
 initClock();
-highlightNav();
